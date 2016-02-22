@@ -50,11 +50,11 @@ generate_tic_tac_toe
 generate_tic_tac_toe
 # => [["O", "O", "X"], ["X", "X", "O"], ["O", "O", "X"]]
 ```
-*Figure 4*. Generating populated [tic-tac-toe](https://en.wikipedia.org/wiki/Tic-tac-toe) boards.
+*Figure 4*. Generating populated tic-tac-toe boards.
 
 In the [data-drill-nested-arrays-challenge][] we wrote methods that returned one specific nested array. In this release, we'll again write a method that returns a nested array, but in this case, we want to add an element of randomness.
 
-We're going to write a method `generate_tic_tac_toe` that returns a nested array representing a tic-tac-toe board.  The board should be populated with X's and O's.  We can decide how realistic to make the boards (e.g., four of one letter and five of the other, only one winner, etc.).  The only rule is that the board needs to be fully populated with X's and O's.
+We're going to write a method `generate_tic_tac_toe` that returns a nested array representing a [tic-tac-toe][] board.  The board should be populated with X's and O's.  We can decide how realistic to make the boards (e.g., four of one letter and five of the other, only one winner, etc.).  The only rule is that the board needs to be fully populated with X's and O's.
 
 No tests have been provided for this method.  We'll need to write them ourselves.  Because there is an element of randomness to our method, it might seem difficult to test.  What do we know for sure about the boards we generate?
 
@@ -98,3 +98,4 @@ This challenge has given us practice working with arrays and hashes.  These are 
 [built in matchers]: https://www.relishapp.com/rspec/rspec-expectations/v/2-14/docs/built-in-matchers
 [data-drill-nested-arrays-challenge]: ../../../data-drill-nested-arrays-challenge
 [Hash Documentation]: http://www.ruby-doc.org/core-1.9.3/Hash.html#method-c-5B-5D
+[tic-tac-toe]: https://en.wikipedia.org/wiki/Tic-tac-toe
