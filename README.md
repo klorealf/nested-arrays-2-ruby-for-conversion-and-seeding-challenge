@@ -81,9 +81,9 @@ convert_table(table_data)
 #  { "first_name" => "Kathlyn", "last_name" => "Lavoie", "city" => "Maumee", "state" => "OH" }
 # ]
 ```
-*Figure 4*.  Converting table data to an array of hashes.
+*Figure 5*.  Converting table data to an array of hashes.
 
-In this release we're going to convert a nested array into a collection of hashes.  In other words, we'll transform an array of arrays into an array of hashes.  Let's write a `convert_table` method that takes a nested array representing a data table and transforms each data row into a hash, using the table's header row data as keys (see Figure 4).
+In this release we're going to convert a nested array into a collection of hashes.  In other words, we'll transform an array of arrays into an array of hashes.  Let's write a `convert_table` method that takes a nested array representing a data table and transforms each data row into a hash, using the table's header row data as keys (see Figure 5).
 
 We'll need to test our methods behavior.  Given a nested array that holds table data, what does our method return?  There are a number of tests that we can write to confirm that our method is behaving as we expect.  Our code is not complete without tests.
 
