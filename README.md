@@ -54,7 +54,7 @@ generate_tic_tac_toe
 
 In the [data-drill-nested-arrays-challenge][] we wrote methods that returned one specific nested array. In this release, we'll again write a method that returns a nested array, but in this case, we want to add an element of randomness.
 
-We're going to write a method `generate_tic_tac_toe` that returns a nested array representing a tic-tac-toe board.  The board should be populated with X's and O's.  We can decide how realistic to make the boards (e.g., four of one letter and five of the other, only one winner, etc.).  The only rule is that the board needs to be fully populated with X's and O's.
+We're going to write a method `generate_tic_tac_toe` that returns a nested array representing a [tic-tac-toe][] board.  The board should be populated with X's and O's.  We can decide how realistic to make the boards (e.g., four of one letter and five of the other, only one winner, etc.).  The only rule is that the board needs to be fully populated with X's and O's.
 
 No tests have been provided for this method.  We'll need to write them ourselves.  Because there is an element of randomness to our method, it might seem difficult to test.  What do we know for sure about the boards we generate?
 
@@ -81,9 +81,9 @@ convert_table(table_data)
 #  { "first_name" => "Kathlyn", "last_name" => "Lavoie", "city" => "Maumee", "state" => "OH" }
 # ]
 ```
-*Figure 4*.  Converting table data to an array of hashes.
+*Figure 5*.  Converting table data to an array of hashes.
 
-In this release we're going to convert a nested array into a collection of hashes.  In other words, we'll transform an array of arrays into an array of hashes.  Let's write a `convert_table` method that takes a nested array representing a data table and transforms each data row into a hash, using the table's header row data as keys (see Figure 4).
+In this release we're going to convert a nested array into a collection of hashes.  In other words, we'll transform an array of arrays into an array of hashes.  Let's write a `convert_table` method that takes a nested array representing a data table and transforms each data row into a hash, using the table's header row data as keys (see Figure 5).
 
 We'll need to test our methods behavior.  Given a nested array that holds table data, what does our method return?  There are a number of tests that we can write to confirm that our method is behaving as we expect.  Our code is not complete without tests.
 
@@ -98,3 +98,4 @@ This challenge has given us practice working with arrays and hashes.  These are 
 [built in matchers]: https://www.relishapp.com/rspec/rspec-expectations/v/2-14/docs/built-in-matchers
 [data-drill-nested-arrays-challenge]: ../../../data-drill-nested-arrays-challenge
 [Hash Documentation]: http://www.ruby-doc.org/core-1.9.3/Hash.html#method-c-5B-5D
+[tic-tac-toe]: https://en.wikipedia.org/wiki/Tic-tac-toe
