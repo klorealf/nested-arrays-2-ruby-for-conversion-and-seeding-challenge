@@ -50,7 +50,7 @@ generate_tic_tac_toe
 generate_tic_tac_toe
 # => [["O", "O", "X"], ["X", "X", "O"], ["O", "O", "X"]]
 ```
-*Figure 4*. Generating populated tic-tac-toe boards.
+*Figure 4*. Generating populated [tic-tac-toe](https://en.wikipedia.org/wiki/Tic-tac-toe) boards.
 
 In the [data-drill-nested-arrays-challenge][] we wrote methods that returned one specific nested array. In this release, we'll again write a method that returns a nested array, but in this case, we want to add an element of randomness.
 
