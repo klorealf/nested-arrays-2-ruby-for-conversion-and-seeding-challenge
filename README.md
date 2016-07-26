@@ -85,10 +85,15 @@ convert_table(table_data)
 
 In this release we're going to convert a nested array into a collection of hashes.  In other words, we'll transform an array of arrays into an array of hashes.  Let's write a `convert_table` method that takes a nested array representing a data table and transforms each data row into a hash, using the table's header row data as keys (see Figure 5).
 
-We'll need to test our methods behavior.  Given a nested array that holds table data, what does our method return?  There are a number of tests that we can write to confirm that our method is behaving as we expect.  Our code is not complete without tests.
+We'll need to test our method's behavior.  Given a nested array that holds table data, what does our method return?  There are a number of tests that we can write to confirm that our method is behaving as we expect.  Our code is not complete without tests.
 
 
-*Hint:*  Ruby provides a handy `Hash::[]` method which converts a properly formatted array into a hash.  Take some time to read through the [documentation][Hash Documentation] on this method.  Note that the array we pass to the method can actually be formatted in different ways. Which format seems most convenient, given the table-like structure that we're working with?  As always, we can test out the `Hash::[]` method in IRB to see how it behaves.
+### Release 3:  Stretch *(optional)*
+*This release is optional.*
+
+In *Release 2* we converted some table data represented as a nested array into an array of hashes.  How did we pair the table headers with each row's data?  How did we create the hashes?  Ruby provides a number of handy methods for working with and creating arrays and hashes.  For example, there's the `Hash::[]` class method which converts a properly formatted array into a hash.  Take some time to read through the [documentation][Hash Documentation] on this method.  Note that the array we pass to the method can actually be formatted in different ways. Which format seems most convenient, given the table-like structure that we're working with?  As always, we can test out the `Hash::[]` method in IRB to see how it behaves.
+
+Refactor our code to take advantage of this and other methods that Ruby provides us.  
 
 
 ## Conclusion
@@ -97,5 +102,5 @@ This challenge has given us practice working with arrays and hashes.  These are 
 
 [built in matchers]: https://www.relishapp.com/rspec/rspec-expectations/v/2-14/docs/built-in-matchers
 [data-drill-nested-arrays-challenge]: ../../../data-drill-nested-arrays-challenge
-[Hash Documentation]: http://www.ruby-doc.org/core-1.9.3/Hash.html#method-c-5B-5D
+[Hash Documentation]: http://ruby-doc.org/core-2.2.0/Hash.html#method-c-5B-5D
 [tic-tac-toe]: https://en.wikipedia.org/wiki/Tic-tac-toe
