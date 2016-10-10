@@ -64,6 +64,8 @@ Instead, we'll need to think about what we can know about the tic-tac-toe boards
 - Each row has three columns.
 - Each letter on the board is either an X or an O.
 
+*Note:*  Remember that RSpec is Ruby code.  We can write all the Ruby we need to in the `it` blocks.
+
 
 ### Release 2: Convert a Nested Array of Table Data to a Hash
 ```ruby
