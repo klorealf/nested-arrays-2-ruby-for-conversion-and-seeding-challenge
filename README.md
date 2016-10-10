@@ -56,11 +56,13 @@ In the [data-drill-nested-arrays-challenge][] we wrote methods that returned one
 
 We're going to write a method `generate_tic_tac_toe` that returns a nested array representing a [tic-tac-toe][] board.  The board should be populated with X's and O's.  We can decide how realistic to make the boards (e.g., four of one letter and five of the other, only one winner, etc.).  The only rule is that the board needs to be fully populated with X's and O's.
 
-No tests have been provided for this method.  We'll need to write them ourselves.  Because there is an element of randomness to our method, it might seem difficult to test.  What do we know for sure about the boards we generate?
+No tests have been provided for this method.  We'll need to write them ourselves.  Now, there is an element of randomness to our method; it returns a board populated with X's and O's, but we don't know their exact order.  So, we can't test for equality.  We can't say that our method will return an exact value.
+
+Instead, we'll need to think about what we can know about the tic-tac-toe boards and how we can test for those characteristics.  For example, ...
 
 - The board has three rows.
 - Each row has three columns.
-- The board only contains X's and O's—nothing else.
+- Each letter on the board is either an X or an O.
 
 
 ### Release 2: Convert a Nested Array of Table Data to a Hash
