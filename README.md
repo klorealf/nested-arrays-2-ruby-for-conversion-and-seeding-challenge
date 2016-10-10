@@ -90,7 +90,7 @@ In this release we're going to convert a nested array into a collection of hashe
 We'll need to test our method's behavior.  Given a nested array that holds table data, what does our method return?  There are a number of tests that we can write to confirm that our method is behaving as we expect.  Our code is not complete without tests.
 
 
-### Release 3:  Stretch *(optional)*
+### Release 3:  Stretch for Creating a Hash *(optional)*
 *This release is optional.*
 
 In *Release 2* we converted some table data represented as a nested array into an array of hashes.  How did we pair the table headers with each row's data?  How did we create the hashes?  Ruby provides a number of handy methods for working with and creating arrays and hashes.  For example, there's the `Hash::[]` class method which converts a properly formatted array into a hash.  Take some time to read through the [documentation][Hash Documentation] on this method.  Note that the array we pass to the method can actually be formatted in different ways. Which format seems most convenient, given the table-like structure that we're working with?  As always, we can test out the `Hash::[]` method in IRB to see how it behaves.
