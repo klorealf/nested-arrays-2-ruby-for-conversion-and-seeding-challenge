@@ -62,8 +62,6 @@ No tests have been provided for this method.  We'll need to write them ourselves
 - Each row has three columns.
 - The board only contains X's and O's—nothing else.
 
-*Note:*  Remember that RSpec has many different [matchers][built in matchers] built in.
-
 
 ### Release 2: Convert a Nested Array of Table Data to a Hash
 ```ruby
