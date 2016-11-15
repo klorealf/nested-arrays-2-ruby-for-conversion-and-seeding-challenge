@@ -56,13 +56,15 @@ In the [data-drill-nested-arrays-challenge][] we wrote methods that returned one
 
 We're going to write a method `generate_tic_tac_toe` that returns a nested array representing a [tic-tac-toe][] board.  The board should be populated with X's and O's.  We can decide how realistic to make the boards (e.g., four of one letter and five of the other, only one winner, etc.).  The only rule is that the board needs to be fully populated with X's and O's.
 
-No tests have been provided for this method.  We'll need to write them ourselves.  Because there is an element of randomness to our method, it might seem difficult to test.  What do we know for sure about the boards we generate?
+No tests have been provided for this method.  We'll need to write them ourselves.  Now, there is an element of randomness to our method; it returns a board populated with X's and O's, but we don't know their exact order.  So, we can't test for equality.  We can't say that our method will return an exact value.
+
+Instead, we'll need to think about what we can know about the tic-tac-toe boards and how we can test for those characteristics.  For example, ...
 
 - The board has three rows.
 - Each row has three columns.
-- The board only contains X's and O's—nothing else.
+- Each letter on the board is either an X or an O.
 
-*Note:*  Remember that RSpec has many different [matchers][built in matchers] built in.
+*Note:*  Remember that RSpec is Ruby code.  We can write all the Ruby we need to in the `it` blocks.
 
 
 ### Release 2: Convert a Nested Array of Table Data to a Hash
@@ -88,7 +90,13 @@ In this release we're going to convert a nested array into a collection of hashe
 We'll need to test our method's behavior.  Given a nested array that holds table data, what does our method return?  There are a number of tests that we can write to confirm that our method is behaving as we expect.  Our code is not complete without tests.
 
 
-### Release 3:  Stretch *(optional)*
+### Release 3:  Stretch for Using RSpec's Built-in Matchers *(optional)*
+*This release is optional.*
+
+We wrote tests to verify that the methods we wrote in *Release 1* and *Release 2* work as expected.  In this stretch release, we'll refactor our tests to utilize RSpec's built-in matchers.  Read through the documentation on [RSpecs built-in matchers][built-in matchers] and refactor the tests to utilize them where appropriate.
+
+
+### Release 4:  Stretch for Creating a Hash *(optional)*
 *This release is optional.*
 
 In *Release 2* we converted some table data represented as a nested array into an array of hashes.  How did we pair the table headers with each row's data?  How did we create the hashes?  Ruby provides a number of handy methods for working with and creating arrays and hashes.  For example, there's the `Hash::[]` class method which converts a properly formatted array into a hash.  Take some time to read through the [documentation][Hash Documentation] on this method.  Note that the array we pass to the method can actually be formatted in different ways. Which format seems most convenient, given the table-like structure that we're working with?  As always, we can test out the `Hash::[]` method in IRB to see how it behaves.
@@ -100,7 +108,7 @@ Refactor our code to take advantage of this and other methods that Ruby provides
 This challenge has given us practice working with arrays and hashes.  These are two fundamental data structures with which we need to be familiar.  We need to know how to instantiate them, manipulate them, transform them, access their values, etc.  Before moving on, let's be sure that we've answered any questions that popped up in this challenge.
 
 
-[built in matchers]: https://www.relishapp.com/rspec/rspec-expectations/v/2-14/docs/built-in-matchers
+[built-in matchers]: http://www.relishapp.com/rspec/rspec-expectations/v/3-4/docs/built-in-matchers
 [data-drill-nested-arrays-challenge]: ../../../data-drill-nested-arrays-challenge
 [Hash Documentation]: http://ruby-doc.org/core-2.2.0/Hash.html#method-c-5B-5D
 [tic-tac-toe]: https://en.wikipedia.org/wiki/Tic-tac-toe
