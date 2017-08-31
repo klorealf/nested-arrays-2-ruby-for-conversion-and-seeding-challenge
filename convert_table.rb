@@ -5,14 +5,19 @@ table_data = [
   ["Kathlyn", "Lavoie", "Maumee", "OH"]
 ]
 
+# def convert_table (table)
+#    converted = []
+#    table[1..-1].each{|row| converted << Hash[table[0].zip(row)] }
+#    converted
+# end
 
 def convert_table (table)
-   converted = []
-   table.each do |row|
-     converted << Hash[table[0].zip(row.each{|item|item})]
-   end
-   converted.delete_at(0)
-   p converted
- end
+   table[1..-1].map{|row| Hash[table[0].zip(row)] }
+end
 
- convert_table(table_data)
+
+ p convert_table(table_data)
+
+# =>  [{"first_name"=>"Elisabeth", "last_name"=>"Gardenar", "city"=>"Toledo", "state"=>"OH"},
+ # {"first_name"=>"Jamaal", "last_name"=>"Du", "city"=>"Sylvania", "state"=>"OH"},
+ # {"first_name"=>"Kathlyn", "last_name"=>"Lavoie", "city"=>"Maumee", "state"=>"OH"}]
