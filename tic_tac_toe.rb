@@ -10,10 +10,12 @@ def generate_tic_tac_toe
   tic_tac_toe_board << row3
   tic_tac_toe_board[0].push(['X', 'O'].sample)
   tic_tac_toe_board[1].push(['X', 'O'].sample)
-  if tic_tac_toe_board[1][3] == 'X'
+  if tic_tac_toe_board[1][3] == 'X' && tic_tac_toe_board[0][3] == 'X'
     tic_tac_toe_board[2].push('O')
-  else
+  elsif tic_tac_toe_board[1][3] == 'O' && tic_tac_toe_board[0][3] == 'O'
     tic_tac_toe_board[2].push('X')
+  else
+    tic_tac_toe_board[2].push(['X', 'O'].sample)
   end
   tic_tac_toe_board[0].shuffle!
   tic_tac_toe_board[1].shuffle!
