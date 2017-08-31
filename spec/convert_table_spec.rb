@@ -14,4 +14,9 @@ describe 'converting a roster from a nested array to a collection of hashes' do
                                     { "first_name" => "Jamaal", "last_name" => "Du", "city" => "Sylvania", "state" => "OH" },
                                     { "first_name" => "Kathlyn", "last_name" => "Lavoie", "city" => "Maumee", "state" => "OH" }]
   end
+
+  it "converts specific keys" do
+    convert_data_str = convert_table(data)
+    expect(convert_data_str[0][0]).to eq  "first_name"
+  end
 end
