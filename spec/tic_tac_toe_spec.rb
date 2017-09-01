@@ -11,7 +11,7 @@ describe 'generating a tic-tac-toe board' do
   end
 
   it 'each letter on the board is either an X or an O'
-    expect(generate_tic_tac_toe[0].sample).to include("X", "O")
+    expect(generate_tic_tac_toe[0].sample).to match(/["X","O"]/)
   end
 
 end
